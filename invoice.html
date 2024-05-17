@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3283cfe58e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <img src="matinsoftech.jpg" alt="logoImage">
+
+        </div>
+        <div class="info-container">
+            <div
+                style="width: 100%; margin-top: 2rem; height: 55px; background-color: #ffc808; display: flex; justify-content: end; padding-right: 25%;">
+                <div style="background-color: white; width: 25%; margin: 0 -4rem; text-align: center;">
+                    <div class="inv-text">
+                        <p>INVOICE</p>
+                    </div>
+                </div>
+            </div>
+            <p class="invoice-heading mt-4">invoice to:</p>
+            <div class="invoice-info">
+                <p><span class="invoice-details">Name</span>: <input type="text" class="rounded" readonly></p>
+                <p><span class="invoice-details">Address</span>: <input type="text" class="rounded" readonly></p>
+                <p><span class="invoice-details">Invoice No.</span>: <input type="text" class="rounded" readonly></p>
+                <p><span class="invoice-details">Date</span>: <input type="text" class="rounded" readonly></p>
+            </div>
+            <table class="invoice-table">
+                <tr class="row-heading">
+                    <th>S.No</th>
+                    <th>Item Description</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Advance payment by DMT</td>
+                    <td>50,000 NPR</td>
+                    <td>4</td>
+                    <td>2,00,000 NPR</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Service Charge</td>
+                    <td>30,000 NPR</td>
+                    <td>2</td>
+                    <td>60,000 NPR</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Consultation Fee</td>
+                    <td>20,000 NPR</td>
+                    <td>3</td>
+                    <td>60,000 NPR</td>
+                </tr>
+            </table>
+            <div class="card mt-4">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <p>
+                    <h4>Thank you for your business.</h4>
+                    </p>
+                    <div class="charge-section">
+                        <ul type="none">
+                            <li>Sub Total: <input type="text" readonly></li>
+                            <li>Discount: <input type="text" readonly></li>
+                            <li>Taxable amount: <input type="text" readonly></li>
+                            <li>VAT (13%): <input type="text" readonly></li>
+                            <li>Grand Total: <input type="text" readonly></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="payment-info">
+                <p>Payment Info:</p>
+                <p>Esewa: 9800971310</p>
+                <p>Bank Name: Siddharth Bank</p>
+                <p>Account Holder: Matin Softech</p>
+                <p>Account No.: 00319681350</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="main-footer">
+                <div class="contact-info">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+977-9800971310</p>
+                        <p>+91-7543800768</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Matrika Marg,<br>Above Hazi Store,<br>2nd Floor, Biratnagar-7</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>www.matinsoftech.com</p>
+                        <p>matinsoftech@gmail.com</p>
+                    </div>
+                </div>
+                <div class="auth-sign">
+                    <p>Authorized Sign</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

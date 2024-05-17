@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.invoice-container, .info-container {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.info-container {
+    width: 100%;
+    margin: 6rem auto;
+}
+
+.total-amount {
+    background-color: #ffc808;
+    font-weight: bolder;
+    padding: 10px 10px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    padding: 10px;
+}
+
+.inv-text {
+    margin-top: 2rem;
+    font-size: 50px;
+    font-weight: bold;
+    float: right;
+    transform: translateY(-43px);
+}
+
+.invoice-info {
+    margin-top: 2rem;
+    padding: 20px;
+    font-size: large;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.invoice-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.auth-sign {
+    font-size: x-large;
+    border-top: 2px solid black;
+    width: 17%;
+    float: right;
+    margin: 1rem 2rem;
+    font-weight: bold;
+}
+
+.row-heading {
+    background-color: #002379;
+    color: white;
+}
+
+.invoice-details {
+    font-size: large;
+    font-weight: bold;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th,
+.invoice-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.colored-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-grow: 2;
+    background-color: #ffc808;
+    height: 55px;
+}
+
+.charge-section li {
+    margin: 1rem auto;
+}
+
+input {
+    border: none;
+}
+
+.main-footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.payment-info {
+    padding: 20px;
+}
+
+.footer {
+    background-color: transparent;
+    padding: 10px;
+    border-top: 3px solid #ffc808;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .contact-info div {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .invoice-container {
+        width: 80%;
+    }
+
+    .info-container {
+        width: 90%;
+    }
+
+    .inv-text {
+        font-size: 45px;
+    }
+
+    .invoice-table {
+        font-size: 16px;
+    }
+
+    .auth-sign {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .invoice-container, .info-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .inv-text {
+        font-size: 40px;
+        float: none;
+        text-align: center;
+        transform: none;
+        margin: 2rem auto;
+    }
+
+    .invoice-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-sign {
+        width: 50%;
+        text-align: center;
+        float: none;
+        margin: 1rem auto;
+    }
+
+    .invoice-table {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inv-text {
+        font-size: 35px;
+    }
+
+    .invoice-table {
+        font-size: 12px;
+    }
+
+    .auth-sign {
+        width: 70%;
+    }
+}
